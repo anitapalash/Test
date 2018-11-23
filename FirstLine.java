@@ -22,10 +22,10 @@ public class FirstLine {
     //first task
     //Функция, проверяющая равны ли по содержанию два массива чисел(без использования библиотечных функций)
     private static boolean isArrayEqual(int[] a, int[] b) {
-        if (a.length != b.length)
+        if (a.length != b.length)               //если размеры массивов не совпадают, то можно сразу вернуть ответ
             return false;
 
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length; i++) {    //проверка элементов до первого несовпадения
             if (a[i] != b[i])
                 return false;
         }
